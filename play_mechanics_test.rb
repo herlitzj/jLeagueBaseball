@@ -17,10 +17,10 @@ else
 end
 
 #an empty array to store the play values
-play_array = []
+play_array ||= []
 
 play_hash.each do |value, play|
-	if value > dice_roll
+	if value >= dice_roll
 		play_array.push(play)
 	end
 end
@@ -29,22 +29,13 @@ end
 puts dice_roll, play_array.first
 
 case play_array.first
-	when "!"
-		puts "Wild Play"
-	when "PARK"
-		puts "Special park Play"
-	when "HG"
-		puts "Hard grounder"
-	when "RG_SS"
-		puts "Routine grounder to the short stop"
-	when "RG_1B"
-		puts "routine grounder to the first baseman"
-	when "1B_SS"
-		puts "Single to the short stop"
-	when "HR"
-		puts "HOMERUN!"
-	when "HB"
-		puts "Hot ball"
-	when "3B"
-		puts "Triple"
-	end
+	when "!" then puts "Wild Play"
+	when "PARK" then puts "Special park Play"
+	when "HG_SS" then puts "Hard grounder to short stop"
+	when "RG_SS" then puts "Routine grounder to the short stop"
+	when "RG_1B" then puts "routine grounder to the first baseman"
+	when "1B_SS" then puts "Single to the short stop"
+	when "HR" then puts "HOMERUN!"
+	when "HB" then puts "Hot ball"
+	when "3B" then puts "Triple"
+end
