@@ -1,22 +1,23 @@
-bloomquist	willie	arizona	right	10	10	wild
-				67	67	error
-				82	82	l_ss
-				97	97	park
-				128	127	1b_gcf
-				129	129	3b_lcf
-				226	164	hg_ss
-				290	187	hg_2b
-				322	199	hg_3b
-				326	201	2b_lcf
-				389	263	1b_llf
-				452	325	1b_lrf
-				456	371	rg_3b
-				457	386	hf_lf
-				462	393	hb
-				480	409	bb
-				482	412	2b_cfw
-				486	413	2b_lfl
-				491	415	2b_lfw
-				496	471	rg_ss
-				498	490	hf_cf
-				499	499	p_ss
+lastname	firstname	team	hand	vslh	vsrh	play_vslh	play_vsrh
+bloomquist	willie	arizona	right	10	10	wild	wild
+				67	67	error	error
+				82	82	l_ss	l_ss
+				97	97	park	park
+				128	127	1b_gcf	1b_gcf
+				129	129	3b_lcf	3b_lcf
+				226	164	hg_ss	hg_ss
+				290	187	hg_2b	hg_2b
+				322	199	hg_3b	hg_3b
+				326	201	2b_lcf	2b_lcf
+				389	263	1b_llf	1b_llf
+				452	325	1b_lrf	1b_lrf
+				456	371	rg_3b	rg_3b
+				457	386	hf_lf	hf_lf
+				462	393	hb	hb
+				480	409	bb	bb
+				482	412	2b_cfw	2b_cfw
+				486	413	2b_lfl	2b_lfl
+				491	415	2b_lfw	2b_lfw
+				496	471	rg_ss	rg_ss
+				498	490	hf_cf	hf_cf
+				499	499	p_ss	p_ss
