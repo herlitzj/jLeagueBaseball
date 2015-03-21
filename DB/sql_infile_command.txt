@@ -1,0 +1,1 @@
+mysql -u root -p --local-infile=1 "database_name"
