@@ -1,19 +1,19 @@
-lastname	firstname	team	hand	vslh	vsrh	play_vslh	play_vsrh
-bell	heath	arizona	right	514	514	park	park
-				539	539	wp_pb	wp_pb
-				564	558	ofr	ofr
-				615	607	ifr	ifr
-				616	616	hb	hb
-				624	621	sg_2b	sg_ss
-				633	625	hf_cf	hf_cf
-				651	655	1b_lcf	1b_lcf
-				658	657	hf_rf	hf_rf
-				666	662	sg_ss	sg_2b
-				673	664	hf_lf	hf_lf
-				684	670	sg_1b	sg_3b
-				701	700	1b_gcf	1b_gcf
-				723	710	2b_rcf	2b_rcf
-				799	815	df	df
-				939	974	so	so
-				963	985	bb	bb
-				999	999	hg_2b	hg_ss
+lastname	firstname	team	hand	vslh	vsrh	play_vslh	play_vsrh	bfsp	bfrp	rest0	rest1	rest2	rest3	error	rnge	hold	wp	balk	pickoff	durability	dldays	bat	bunt	run	steal	ab	wild
+bell	heath	arizona	right	514	514	park	park	0	6	11	14	17	19	4	d	Vg_0	unlikely	rare	0	7	0	rsp#1_pr	Fr_-1	0	0	0	null
+				539	539	wp_pb	wp_pb																				
+				564	558	ofr	ofr																				
+				615	607	ifr	ifr																				
+				616	616	hb	hb																				
+				624	621	sg_2b	sg_ss																				
+				633	625	hf_cf	hf_cf																				
+				651	655	1b_lcf	1b_lcf																				
+				658	657	hf_rf	hf_rf																				
+				666	662	sg_ss	sg_2b																				
+				673	664	hf_lf	hf_lf																				
+				684	670	sg_1b	sg_3b																				
+				701	700	1b_gcf	1b_gcf																				
+				723	710	2b_rcf	2b_rcf																				
+				799	815	df	df																				
+				939	974	so	so																				
+				963	985	bb	bb																				
+				999	999	hg_2b	hg_ss																				
