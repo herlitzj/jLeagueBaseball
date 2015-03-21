@@ -1,1 +1,3 @@
 mysql -u root -p --local-infile=1 "database_name"
+
+load data local infile '/home/jeff/Projects/Baseball/jLeagueBaseball/DB/ARI_Bell_Heath.txt' into table bell_heath lines terminated by '\n' starting by '' ignore 1 rows;

@@ -1,12 +1,9 @@
-#THIS FILE IS DEPRECATED - ALL MECHANICS MOVED TO play_mechanics_test.rb
 
 #batter info pulled from database
 require 'mysql'
 
-batter = "bloomquist_willie"
-pitcher = "bell_heath"
-
-def sql_query(player, vsHand, play)
+#db query to generate play hashes for pitcher and batter
+def array_query(player, vsHand, play)
 	if player != ''
 		begin
 		    con = Mysql.new 'localhost', 'root', 'waffles!', 'jLeague'
@@ -49,6 +46,26 @@ def sql_query(player, vsHand, play)
 	return play_hash
 end
 
+#query for pulling single data variables for play mechanics
+def single_query(player, data1)
+	if player != ''
+		begin
+		    con = Mysql.new 'localhost', 'root', 'waffles!', 'jLeague'
+
+		    output = con.query("SELECT #{data1} FROM #{player}").fetch_row
+		    
+		rescue Mysql::Error => e
+		    puts e.errno
+		    puts e.error
+		    
+		ensure
+		    con.close if con
+		end
+	else
+		puts "no data"
+	end
+	puts output
+end
 
 #puts sql_query(1, 'vslh', 'play')
 
@@ -58,40 +75,118 @@ end
 #pitcher_hash = {514 => "PARK", 539 => "WP_PB", 564 => "OFR", 615 => "IFR", 616 => "HB", 624 => "SG_2B", 633 => "HF_CF", 651 => "1B_LCF", 658 => "HF_RF", 666=> "SG_SS", 673 => "HF_LF", 701 => "1B_GCF", 723 => "2B_RCF", 799 => "DF", 939 => "SO", 963 => "BB", 999 => "HG_2B"}
 
 #random dice roll for 000-999. This is the way the IBL game functions so I am going with it.
-dice_roll = rand(999)
+dice_roll = 183 #rand(999)
 
-#an empty hash to store the chosen hash
+#random numbers for bases. Eventually this will be generated and
+#stored as the game progresses
+first = 0 #rand(2)
+second = 1 # rand(2)
+third = 0 #rand(2)
+$allBases = first.to_s + second.to_s + third.to_s
+
+#placeholder pitcher/batter choice
+batter = "bloomquist_willie"
+pitcher = "bell_heath"
+
+#an empty hash to store the chosen player's hash
 play_hash = {}
 
 #if dice_roll <500 use batter_hash
 #if dice_roll >500 use pitcher_hash
 if dice_roll < 500
-	play_hash = sql_query(batter, 'vslh', 'play_vslh')
+	play_hash = array_query(batter, 'vslh', 'play_vslh')
 else
-	play_hash = sql_query(pitcher, 'vslh', 'play_vslh')
+	play_hash = array_query(pitcher, 'vslh', 'play_vslh')
 end
 
 #an empty array to store the play values
-play_array ||= []
+$play_array ||= []
 
 play_hash.each do |value, play|
 	if value >= dice_roll
-		play_array.push(play)
+		$play_array.push(play)
 	end
 end
 
-#output the final play value and dice roll
-if dice_roll < 500 then puts "Batter" else puts "Pitcher" end
-puts dice_roll, play_array.first
+#placeholder for fielders. Eventually will come from db
+fielder = $play_array.first.split("_")[0] #"3b"
+$direction = ''
+if fielder == "1B" or fielder == "2B" then $direction = "right" else $direction = "left" end
 
-case play_array.first
-	when "!" then puts "Wild Play"
-	when "PARK" then puts "Special park Play"
-	when "HG_SS" then puts "Hard grounder to short stop"
-	when "RG_SS" then puts "Routine grounder to the short stop"
-	when "RG_1B" then puts "routine grounder to the first baseman"
-	when "1B_SS" then puts "Single to the short stop"
-	when "HR" then puts "HOMERUN!"
-	when "HB" then puts "Hot ball"
+#Play choice placeholders
+$hitAndRun = rand(2)
+$fielderIn = rand(2)
+$runnerRating = rand(4)
+$infielder_rating = -1
+$batter_rating = 3
+
+#hard grounder proc
+def hard_grounder
+	case $allBases
+	when "000" then puts "Batter out at first."
+	when "100" then 
+		if $play_array.first.split("_")[0] == "HG-"
+			if $infielder_rating < 0 and rand(9) < $batter_rating
+				puts "Runner out at second. Batter safe at first on slow throw from fielder."
+			else puts "Runner out at second. Batter out at first."
+			end
+		elsif $hitAndRun == 1 and $runnerRating >= 2
+			puts "Runner advances to second. Batter out at first."
+		elsif $hitAndRun == 1 and $runnerRating <= 1
+			puts "Runner out at second. Batter safe at first."				
+		else puts "Runner out at second. Batter out at first."
+		end
+	when "010" then
+		if $direction == "left"
+			puts "Batter out at first. Runner holds."
+		else
+			puts "Batter out at first. Runner advances to third."
+		end
+	when "001" then puts "Batter out at first."
+	when "110" then puts "Runner on first out at second."
+	when "101" then puts "Defensive manager's choice. What to do?"
+	when "011" then puts "Batter out at first."
+	when "111" then puts "Runner on third scores."
+	else puts "other play"
+	end
+end
+
+#slow grounder proc
+
+
+
+
+#________________PLAY MECHANICS START BELOW___________________________________
+
+
+#output the final play value and dice roll and bases
+if dice_roll < 500 then puts "Batter" else puts "Pitcher" end
+puts dice_roll, $play_array.first, $allBases
+
+#select play proc based on play_array values
+case $play_array.first.split("_")[0]
+	when "WILD" then puts "Wild Play"
+	when "PARK" then puts "Park Effects"
+	when "ERROR" then puts "Error"
+	when "L" then puts "Line out"
+	when "HG" then hard_grounder
+	when "HG-" then hard_grounder
+	when "RG" then puts "Routine grounder"
+	when "SG" then puts "Slow grounder"
+	when "1B" then puts "Single"
+	when "2B" then puts "Double"
 	when "3B" then puts "Triple"
+	when "HR" then puts "HOMERUN!"
+	when "HB" then puts "Hit by pitch"
+	when "HF" then puts "High fly ball"
+	when "BB" then puts "Base on balls"
+	when "IFR" then puts "Infield Range"
+	when "OFR" then puts "Outfield Range"
+	when "P" then puts "Popout. Runners hold."
+	when "FO" then puts "Foul out. Runners hold."
+	when "WP_PB" then puts "Wild pitch or passed ball."
+	when "DF" then puts "Deep fly ball"
+	when "SO" then puts "Strike out"
+	when "WT" then puts "Deep fly ball to warning track."
+	when "LF" then puts "Long fly ball."
 end

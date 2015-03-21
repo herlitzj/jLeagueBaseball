@@ -1,10 +1,9 @@
-def hg(bases, direction)
-	#bases = bases
+def hard_grounder(bases, direction)
 	case bases
 	when "000" then puts "Batter out at first."
 	when "100" then puts "Runner out at second."
 	when "010" then
-		if direction == "l"
+		if direction == "left"
 			puts "Batter out at first. Runner holds."
 		else
 			puts "Batter out at first. Runner advances to third."
@@ -25,8 +24,10 @@ first = rand(2)
 second = rand(2)
 third = rand(2)
 allBases = first.to_s + second.to_s + third.to_s
-direction = "r"
+fielder = "3b"
+direction = ''
+if fielder == "1b" or fielder == "2b" then direction = "right" else direction = "left" end
 
 puts allBases
 
-hg(allBases, direction)
+hard_grounder(allBases, direction)
