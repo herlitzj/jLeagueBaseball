@@ -1,0 +1,20 @@
+lastname	firstname	team	hand	play	vslh	vsrh	field_vslh	field_vsrh	bfsp	bfrp	rest0	rest1	rest2	rest3	error	rnge	hold	wp	balk	pickoff	durability	dldays	bat	bunt	run	steal	wild
+walden	jordan	houston	right	park	514	514			0	6	6	8	10	12	0	f	Fr_3	prone	rare	1	5	17	rsp#1_pr	Fr_-1	0	0	w_wp
+				wp_pb	539	539																					
+				ofr	564	568																					
+				ifr	605	614																					
+				hb	608	0																					
+				sg	618	631	2b	ss																			
+				hf	637	660	cf	cf																			
+				1b	0	0	inf	inf																			
+				1b	654	680	lcf	lcf																			
+				hf	668	701	rf	rf																			
+				sg	678	718	ss	2b																			
+				hf	692	739	lf	lf																			
+				sg	706	760	1b	3b																			
+				1b	722	779	gcf	gcf																			
+				2b	0	0	rcf	lcf																			
+				df	756	803																					
+				so	959	843																					
+				bb	971	999																					
+				hg	999	0	2b	ss																			

@@ -4,7 +4,7 @@ require 'mysql'
 location = "Boston"
 
 #region array
-region = "Great Lakes" #["Great Lakes", "Rocky Mountains", "Southern California", "North", "Eastern Seaboard", "Heartland", "Florida", "Northern California", "Deep South", "Southwest", "Pacific Northwest"]
+#region = "Great Lakes" #["Great Lakes", "Rocky Mountains", "Southern California", "North", "Eastern Seaboard", "Heartland", "Florida", "Northern California", "Deep South", "Southwest", "Pacific Northwest"]
 
 #month array
 month = "May" #["April", "May", "June", "July", "August", "September", "October"]
@@ -13,10 +13,10 @@ month = "May" #["April", "May", "June", "July", "August", "September", "October"
 time = "Day"
 
 #test hashes (these will eventually pull from database)
-day_temp = {3 => "Hot", 66 => "Warm", 97 => "Cool", 99 => "Cold"}
-night_temp = {0 => "Hot", 22 => "Warm", 94 => "Cool", 99 => "Cold"}
-sky = {23 => "Clear", 57 => "Partly Cloudy", 99 => "Cloudy"}
-precipitation = {14 => "Thunderstorms", 41 => "Showers", 46 => "Fog", 99 => "None"}
+#day_temp = {3 => "Hot", 66 => "Warm", 97 => "Cool", 99 => "Cold"}
+#night_temp = {0 => "Hot", 22 => "Warm", 94 => "Cool", 99 => "Cold"}
+#sky = {23 => "Clear", 57 => "Partly Cloudy", 99 => "Cloudy"}
+#precipitation = {14 => "Thunderstorms", 41 => "Showers", 46 => "Fog", 99 => "None"}
 
 #dice roll
 def dice

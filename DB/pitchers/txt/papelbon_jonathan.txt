@@ -1,0 +1,20 @@
+lastname	firstname	team	hand	play	vslh	vsrh	field_vslh	field_vsrh	bfsp	bfrp	rest0	rest1	rest2	rest3	error	rnge	hold	wp	balk	pickoff	durability	dldays	bat	bunt	run	steal	wild
+papelbon	jonathan	houston	right	park	514	514			0	7	8	11	14	16	6	I	Av_2	prone	rare	1	6	0	rsp#1_pr	Fr_-1	0	0	
+				wp_pb	539	539																					
+				ofr	560	562																					
+				ifr	615	614																					
+				hb	0	0																					
+				sg	646	634	2b	ss																			
+				hf	670	663	cf	cf																			
+				1b	678	671	inf	inf																			
+				1b	703	697	lcf	lcf																			
+				hf	721	719	rf	rf																			
+				sg	752	739	ss	2b																			
+				hf	770	761	lf	lf																			
+				sg	810	789	1b	3b																			
+				1b	834	814	gcf	gcf																			
+				2b	0	0	rcf	lcf																			
+				df	862	833																					
+				so	983	956																					
+				bb	0	0																					
+				hg	999	999	2b	ss																			

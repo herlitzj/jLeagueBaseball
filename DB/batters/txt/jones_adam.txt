@@ -1,0 +1,26 @@
+lastname	firstname	team	hand	play	vslh	vsrh	field_vslh	field_vsrh	position	error	rnge	throw	passedball	pickoff	play	play_vl	play_vr	run	steal	jump	bunt	durability	dldays	wild
+jones	adam	houston	right	wild	10	10			cf	8	h	-2			ifr	p	p	3	11	1	Av_0	9	0	
+				error	67	67			lf/rf	8	g	-2			ofr	sp	sp							
+				l	82	82	3b	3b							df	p	sp							
+				park	97	97									power	vg	ex							
+				1b	114	121	inf	inf																
+				1b	124	134	glf	glf																
+				3b	0	0	lcf	lcf																
+				hg-	165	144	ss	ss																
+				hg	193	151	3b	3b																
+				hg	207	155	2b	2b																
+				2b	216	162	lcf	lcf																
+				1b	246	201	llf	llf																
+				1b	256	214	lrf	lrf																
+				rg	282	255	ss	ss																
+				hf	291	276	lf	lf																
+				hr	310	302																		
+				hb	315	307																		
+				bb	312	0																		
+				so	433	396																		
+				3b	0	397	cfw	cfw																
+				2b	442	404	lf	lf																
+				2b	451	412	lfw	lfw																
+				rg+	482	461	3b	3b																
+				hf	494	488	cf	cf																
+				p	499	499	ss	ss																

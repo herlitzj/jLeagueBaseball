@@ -1,0 +1,20 @@
+lastname	firstname	team	hand	play	vslh	vsrh	field_vslh	field_vsrh	bfsp	bfrp	rest0	rest1	rest2	rest3	error	rnge	hold	wp	balk	pickoff	durability	dldays	bat	bunt	run	steal	wild
+minor	mike	houston	left	park	514	514			28	18	-	8	12	16	9	h	Av_-4	unlikely	rare	1	7	0	rsp#2_fr	Av_-1	-2	0	
+				wp_pb	539	539																					
+				ofr	560	568																					
+				ifr	611	617																					
+				hb	0	0																					
+				sg	632	638	2b	ss																			
+				hf	650	671	cf	cf																			
+				1b	651	0	inf	inf																			
+				1b	666	681	lcf	lcf																			
+				hf	679	706	rf	rf																			
+				sg	700	727	ss	2b																			
+				hf	713	752	lf	lf																			
+				sg	741	780	1b	3b																			
+				1b	756	789	gcf	gcf																			
+				2b	0	802	rcf	lcf																			
+				df	794	851																					
+				so	941	963																					
+				bb	956	980																					
+				hg	999	999	2b	ss																			

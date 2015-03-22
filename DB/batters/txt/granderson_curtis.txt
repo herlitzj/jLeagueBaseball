@@ -1,0 +1,26 @@
+lastname	firstname	team	hand	play	vslh	vsrh	field_vslh	field_vsrh	position	error	rnge	throw	passedball	pickoff	play	play_vl	play_vr	run	steal	jump	bunt	durability	dldays	wild
+granderson	curtis	houston	left	wild	10	10			cf	9	g	0			ifr	sp	sp	1	8	1	Av_1	3	113	
+				error	67	67			lf	5	k	0			ofr	sp	p							
+				l	82	82	2b		rf	5	c	0			df	sp	p							
+				park	97	97			lf/rf	9	f	0			power	av	vg							
+				1b	0	0	inf	inf																
+				1b	100	103	gcf	gcf																
+				3b	104	107	rcf	rcf																
+				hg-	0	0	2b	2b																
+				hg	0	0	ss	ss																
+				hg	0	0	1b	1b																
+				2b	112	116	rcf	rcf																
+				1b	120	129	llf	llf																
+				1b	128	142	lrf	lrf																
+				rg	138	163	1b	1b																
+				hf	146	180	rf	cf																
+				hr	160	190																		
+				hb	163	0																		
+				bb	231	258																		
+				so	449	420																		
+				3b	454	424	cfw	cfw																
+				2b	462	433	rfl	rfl																
+				2b	470	442	rfw	rfw																
+				rg+	483	467	2b	2b																
+				hf	494	489	cf	rf																
+				p	499	499	2b	2b																

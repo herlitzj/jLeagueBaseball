@@ -1,0 +1,26 @@
+lastname	firstname	team	hand	play	vslh	vsrh	field_vslh	field_vsrh	position	error	rnge	throw	passedball	pickoff	play	play_vl	play_vr	run	steal	jump	bunt	durability	dldays	wild
+reyes	jose	houston	switch	wild	10	10			ss	6	I				ifr	p	sp	3	9	1	Av_0	5	74	
+				error	67	67									ofr	p	sp							
+				l	82	82	3b	2b							df	sp	p							
+				park	97	97									power	av	av							
+				1b	104	112	inf	inf																
+				1b	122	135	glf	gcf																
+				3b	0	0	lcf	rcf																
+				hg-	159	153	ss	2b																
+				hg	183	165	3b	ss																
+				hg	195	171	2b	1b																
+				2b	200	175	lc	rcf																
+				1b	252	198	llf	llf																
+				1b	269	266	lrf	lrf																
+				rg	311	313	ss	1b																
+				hf	329	337	cf	rf																
+				hr	342	344																		
+				hb	0	0																		
+				bb	370	382																		
+				so	404	391																		
+				3b	0	0	cfw	cfw																
+				2b	409	394	lfl	rfl																
+				2b	414	398	lfw	rfw																
+				rg+	466	455	3b	2b																
+				hf	489	486	lf	cf																
+				p	499	499	ss	2b																

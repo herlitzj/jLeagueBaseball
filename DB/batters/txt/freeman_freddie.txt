@@ -1,0 +1,26 @@
+lastname	firstname	team	hand	play	vslh	vsrh	field_vslh	field_vsrh	position	error	rnge	throw	passedball	pickoff	play	play_vl	play_vr	run	steal	jump	bunt	durability	dldays	wild
+freeman	freddie	houston	left	wild	10	10			1b	7	d				ifr	sp	sp	1	1	0	Fr_-1	7	15	
+				error	67	67									ofr	sp	sp							
+				l	82	82	2b	2b							df	sp	sp							
+				park	97	97									power	av	ex							
+				1b	100	0	inf	inf																
+				1b	122	120	gcf	gcf																
+				3b	0	121	rcf	rcf																
+				hg-	147	139	2b	2b																
+				hg	164	151	ss	ss																
+				hg	173	157	1b	1b																
+				2b	177	163	rcf	rcf																
+				1b	222	207	llf	llf																
+				1b	267	251	lrf	lrf																
+				rg	285	266	1b	1b																
+				hf	292	278	rf	rf																
+				hr	307	298																		
+				hb	321	302																		
+				bb	364	350																		
+				so	454	444																		
+				3b	0	446	cfw	cfw																
+				2b	458	452	rfl	rfl																
+				2b	463	459	rfw	rfw																
+				rg+	486	477	2b	2b																
+				hf	495	492	cf	cf																
+				p	499	499	2b	2b																

@@ -1,0 +1,26 @@
+lastname	firstname	team	hand	play	vslh	vsrh	field_vslh	field_vsrh	position	error	rnge	throw	passedball	pickoff	play	play_vl	play_vr	run	steal	jump	bunt	durability	dldays	wild
+navarro	dioner	houston	switch	wild	10	10			c	1	f	0	fr	0	ifr	p	sp	-2	-1	0	Fr_-1	4	0	
+				error	67	67									ofr	p	sp							
+				l	82	82	3b	2b							df	p	p							
+				park	97	97									power	ex	ex							
+				1b	114	112	inf	inf																
+				1b	133	130	glf	gcf																
+				3b	0	0	lcf	rcf																
+				hg-	174	147	ss	2b																
+				hg	202	159	3b	ss																
+				hg	216	165	2b	1b																
+				2b	0	0	lcf	rcf																
+				1b	271	183	llf	llf																
+				1b	289	237	lrf	lrf																
+				rg	319	278	ss	1b																
+				hf	335	300	cf	rf																
+				hr	371	323																		
+				hb	0	327																		
+				bb	423	361																		
+				so	432	407																		
+				3b	0	0	cfw	cfw																
+				2b	0	0	lfl	rfl																
+				2b	0	408	lfw	rfw																
+				rg+	469	458	3b	2b																
+				hf	490	486	lf	cf																
+				p	499	499	ss	2b																

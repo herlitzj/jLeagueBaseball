@@ -1,0 +1,26 @@
+lastname	firstname	team	hand	play	vslh	vsrh	field_vslh	field_vsrh	position	error	rnge	throw	passedball	pickoff	play	play_vl	play_vr	run	steal	jump	bunt	durability	dldays	wild
+kendrick	howard	houston	right	wild	10	10			2b	6	g				ifr	p	sp	1	6	0	Ex_0	6	35	
+				error	67	67			lf	0	k	3			ofr	o	o							
+				l	82	82	3b	ss	lf/rf	0	k	3			df	sp	sp							
+				park	97	97									power	vg	av							
+				1b	99	98	inf	inf																
+				1b	117	123	glf	gcf																
+				3b	120	126	rcf	rcf																
+				hg-	149	184	ss	ss																
+				hg	168	222	3b	2b																
+				hg	178	241	2b	3b																
+				2b	187	246	rc	rc																
+				1b	223	296	llf	llf																
+				1b	259	346	lrf	lrf																
+				rg	296	364	ss	3b																
+				hf	308	369	cf	cf																
+				hr	321	381																		
+				hb	322	389																		
+				bb	330	0																		
+				so	410	456																		
+				3b	414	460	cfw	cfw																
+				2b	423	464	rfl	rfl																
+				2b	433	469	rfw	rfw																
+				rg+	478	490	3b	ss																
+				hf	493	496	rf	rf																
+				p	499	499	ss	ss																

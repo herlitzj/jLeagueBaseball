@@ -1,0 +1,26 @@
+lastname	firstname	team	hand	play	vslh	vsrh	field_vslh	field_vsrh	position	error	rnge	throw	passedball	pickoff	play	play_vl	play_vr	run	steal	jump	bunt	durability	dldays	wild
+longoria	evan	houston	right	wild	10	10			3v	8	f				ifr	p	p	0	1	0	Fr_-1	9	0	
+				error	67	67									ofr	sp	sp							
+				l	82	82	3b	3b							df	sp	sp							
+				park	97	97									power	ex	ex							
+				1b	0	0	inf	inf																
+				1b	107	108	glf	glf																
+				3b	0	109	lcf	lcf																
+				hg-	133	144	ss	ss																
+				hg	151	168	3b	3b																
+				hg	160	180	2b	2b																
+				2b	175	189	lcf	lcf																
+				1b	205	221	llf	llf																
+				1b	215	232	lrf	lrf																
+				rg	225	241	ss	ss																
+				hf	232	250	lf	lf																
+				hr	260	272																		
+				hb	0	0																		
+				bb	316	320																		
+				so	445	451																		
+				3b	0	453	cfw	cfw																
+				2b	459	461	lfl	lfl																
+				2b	474	470	lfw	lfw																
+				rg+	486	482	3b	3b																
+				hf	495	494	cf	cf																
+				p	499	499	ss	ss																

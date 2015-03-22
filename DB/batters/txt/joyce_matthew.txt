@@ -1,0 +1,26 @@
+lastname	firstname	team	hand	play	vslh	vsrh	field_vslh	field_vsrh	position	error	rnge	throw	passedball	pickoff	play	play_vl	play_vr	run	steal	jump	bunt	durability	dldays	wild
+joyce	matthew	houston	left	wild	10	10			rf	7	f	2			ifr	p	sp	4	7	0	Av_2	7	0	
+				error	67	67			lf	9	c	2			ofr	sp	p							
+				l	82	82	1b	2b	lf/rf	9	d	2			df	sp	p							
+				park	97	97									power	vg	vg							
+				1b	99	0	inf	inf																
+				1b	103	105	grf	rcf																
+				3b	0	0	rcf	rcf																
+				hg-	155	118	2b	2b																
+				hg	189	126	1b	ss																
+				hg	206	130	ss	1b																
+				2b	210	137	rcf	rcf																
+				1b	216	153	llf	llf																
+				1b	222	169	lrf	lrf																
+				rg	256	198	2b	1b																
+				hf	275	224	rf	cf																
+				hr	291	241																		
+				hb	0	242																		
+				bb	319	327																		
+				so	415	403																		
+				3b	0	0	cfw	cfw																
+				2b	419	409	rfl	rfl																
+				2b	423	416	rfw	rfw																
+				rg+	464	452	1b	2b																
+				hf	488	485	cf	rfl																
+				p	499	499	2b	2b																
