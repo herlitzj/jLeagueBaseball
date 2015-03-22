@@ -1,0 +1,91 @@
+location	team	region	direction	wind
+arizona	diamondbacks	southwest	cross	null
+arizona	diamondbacks	southwest	none	99
+arizona	diamondbacks	southwest	straight	null
+atlanta	braves	deep_south	cross	29
+atlanta	braves	deep_south	none	85
+atlanta	braves	deep_south	straight	99
+baltimore	oreoles	eastern_seaboard	cross	27
+baltimore	oreoles	eastern_seaboard	none	84
+baltimore	oreoles	eastern_seaboard	straight	99
+boston	red sox	great_lakes	cross	26
+boston	red sox	great_lakes	none	85
+boston	red sox	great_lakes	straight	99
+chicago	cubs	great_lakes	cross	24
+chicago	cubs	great_lakes	none	82
+chicago	cubs	great_lakes	straight	99
+chicago	white sox	great_lakes	cross	31
+chicago	white sox	great_lakes	none	86
+chicago	white sox	great_lakes	straight	99
+cincinatti	reds	great_lakes	cross	30
+cincinatti	reds	great_lakes	none	84
+cincinatti	reds	great_lakes	straight	99
+cleveland	indians	great_lakes	cross	25
+cleveland	indians	great_lakes	none	83
+cleveland	indians	great_lakes	straight	99
+colorado	rockies	rocky_mountain	cross	28
+colorado	rockies	rocky_mountain	none	85
+colorado	rockies	rocky_mountain	straight	99
+detroit	tigers	great_lakes	cross	30
+detroit	tigers	great_lakes	none	85
+detroit	tigers	great_lakes	straight	99
+houston	astros	southwest	cross	27
+houston	astros	southwest	none	85
+houston	astros	southwest	straight	99
+kansas city	royals	heartland	cross	null
+kansas city	royals	heartland	none	99
+kansas city	royals	heartland	straight	null
+los angeles	angels	southern_california	cross	29
+los angeles	angels	southern_california	none	86
+los angeles	angels	southern_california	straight	99
+los angeles	dodgers	southern_california	cross	null
+los angeles	dodgers	southern_california	none	99
+los angeles	dodgers	southern_california	straight	null
+miami	marlins	florida	cross	25
+miami	marlins	florida	none	83
+miami	marlins	florida	straight	99
+milwaukee	brewers	great_lakes	cross	null
+milwaukee	brewers	great_lakes	none	65
+milwaukee	brewers	great_lakes	straight	99
+minnesota	twins	north	cross	22
+minnesota	twins	north	none	83
+minnesota	twins	north	straight	99
+new york	mets	eastern_seaboard	cross	null
+new york	mets	eastern_seaboard	none	99
+new york	mets	eastern_seaboard	straight	null
+new york	yankees	eastern_seaboard	cross	31
+new york	yankees	eastern_seaboard	none	84
+new york	yankees	eastern_seaboard	straight	99
+oakland	athletics	northern_california	cross	25
+oakland	athletics	northern_california	none	83
+oakland	athletics	northern_california	straight	99
+philadelphia	phillies	eastern_seaboard	cross	null
+philadelphia	phillies	eastern_seaboard	none	99
+philadelphia	phillies	eastern_seaboard	straight	null
+pittsburgh	pirates	great_lakes	cross	25
+pittsburgh	pirates	great_lakes	none	84
+pittsburgh	pirates	great_lakes	straight	99
+san diego	padres	southern_california	cross	25
+san diego	padres	southern_california	none	81
+san diego	padres	southern_california	straight	99
+seattle	mariners	pacific_northwest	cross	null
+seattle	mariners	pacific_northwest	none	99
+seattle	mariners	pacific_northwest	straight	null
+san francisco	giants	northern_california	cross	null
+san francisco	giants	northern_california	none	99
+san francisco	giants	northern_california	straight	null
+saint louis	cardinals	heartland	cross	null
+saint louis	cardinals	heartland	none	80
+saint louis	cardinals	heartland	straight	99
+tampa bay	rays	florida	cross	null
+tampa bay	rays	florida	none	99
+tampa bay	rays	florida	straight	null
+texas	rangers	southwest	cross	23
+texas	rangers	southwest	none	86
+texas	rangers	southwest	straight	99
+toronto	blue jays	great_lakes	cross	null
+toronto	blue jays	great_lakes	none	99
+toronto	blue jays	great_lakes	straight	null
+washington	nationals	eastern_seaboard	cross	null
+washington	nationals	eastern_seaboard	none	66
+washington	nationals	eastern_seaboard	straight	99

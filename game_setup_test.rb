@@ -1,5 +1,10 @@
-#location array
-location = "Great Lakes" #["Great Lakes", "Rocky Mountains", "Southern California", "North", "Eastern Seaboard", "Heartland", "Florida", "Northern California", "Deep South", "Southwest", "Pacific Northwest"]
+require 'mysql'
+
+#location
+location = "Boston"
+
+#region array
+region = "Great Lakes" #["Great Lakes", "Rocky Mountains", "Southern California", "North", "Eastern Seaboard", "Heartland", "Florida", "Northern California", "Deep South", "Southwest", "Pacific Northwest"]
 
 #month array
 month = "May" #["April", "May", "June", "July", "August", "September", "October"]
@@ -14,14 +19,15 @@ sky = {23 => "Clear", 57 => "Partly Cloudy", 99 => "Cloudy"}
 precipitation = {14 => "Thunderstorms", 41 => "Showers", 46 => "Fog", 99 => "None"}
 
 #dice roll
-temp_dice = rand(99)
-precip_dice = rand(99)
-sky_dice = rand(99)
+def dice
+	rand(99)
+end
 
 #select random month and location to test
-puts temp_dice, precip_dice, sky_dice
-puts
+#puts temp_dice, precip_dice, sky_dice
+#puts
 
+=begin
 #choose between daytime and night time temp hashes
 temp_hash = {}
 
@@ -38,7 +44,8 @@ precipitation_array = []
 
 #fill arrays based on dice rolls
 temp_hash.each do |value, temp|
-	if value >= temp_dice
+	roll = dice
+	if value >= roll
 		temp_array.push(temp)
 	end
 end
@@ -54,6 +61,54 @@ precipitation.each do |value, precip|
 		precipitation_array.push(precip)
 	end
 end
+=end
 
-puts location, month, time, temp_array.first, sky_array.first 
-puts precipitation_array.first if sky_array.first == "Cloudy"
+#sql query
+def wind_query(column, table, location, roll)
+	if location != ''
+		begin
+		    con = Mysql.new 'localhost', 'root', 'waffles!', 'jLeague'
+
+		    output = con.query("SELECT #{column} FROM #{table} WHERE wind >= #{roll} AND location = '#{location}'").fetch_row
+		    
+		rescue Mysql::Error => e
+		    puts e.errno
+		    puts e.error
+		    
+		ensure
+		    con.close if con
+		end
+	else
+		puts "no data"
+	end
+	output
+end
+
+def weather_query(column, table, category1, month, roll)
+	if column != ''
+		begin
+		    con = Mysql.new 'localhost', 'root', 'waffles!', 'jLeague'
+
+		    output = con.query("SELECT #{column} FROM #{table} WHERE #{month} >= #{roll} AND category1 = '#{category1}'").fetch_row
+		    
+		rescue Mysql::Error => e
+		    puts e.errno
+		    puts e.error
+		    
+		ensure
+		    con.close if con
+		end
+	else
+		puts "no data"
+	end
+	output
+end
+
+#puts "Location: #{location}, Date: #{month}, Time: #{time}"
+wind = wind_query('direction', 'wind', location, dice).join("")
+temp = weather_query('category2', 'weather', time.downcase, month.downcase, dice)
+sky = weather_query('category2', 'weather', 'sky', month.downcase, dice)
+precip = weather_query('category2', 'weather', 'precip', month.downcase, dice)
+puts location.capitalize, month.capitalize, time, temp.join("").capitalize, sky.join("").split("_").join(" ").capitalize 
+puts precip.join("").capitalize if sky.join("").split("_").join(" ").capitalize == "Cloudy"
+

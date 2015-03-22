@@ -1,0 +1,161 @@
+region	category1	category2	april	may	june	july	august	september	october
+great_lakes	day	hot	0	3	11	22	12	4	0
+great_lakes	day	warm	39	66	90	98	95	79	54
+great_lakes	day	cool	77	97	99	99	99	97	91
+great_lakes	day	cold	99	99	0	0	0	99	99
+great_lakes	night	hot	0	0	2	6	4	0	0
+great_lakes	night	warm	0	22	46	54	51	34	4
+great_lakes	night	cool	52	94	99	99	99	95	80
+great_lakes	night	cold	99	99	0	0	0	99	99
+great_lakes	sky	clear	20	23	23	29	33	33	33
+great_lakes	sky	partly_cloudy	46	57	62	72	72	67	63
+great_lakes	sky	cloudy	99	99	99	99	99	99	99
+great_lakes	precip	thunderstorms	10	14	20	21	16	10	3
+great_lakes	precip	showers	40	41	37	31	28	30	30
+great_lakes	precip	snow	46	0	0	0	0	0	0
+great_lakes	precip	fog	54	46	42	42	34	35	36
+great_lakes	precip	none	99	99	99	99	99	99	99
+rocky_mountains	day	hot							
+rocky_mountains	day	warm							
+rocky_mountains	day	cool							
+rocky_mountains	day	cold							
+rocky_mountains	night	hot							
+rocky_mountains	night	warm							
+rocky_mountains	night	cool							
+rocky_mountains	night	cold							
+rocky_mountains	sky	clear							
+rocky_mountains	sky	partly_cloudy							
+rocky_mountains	sky	cloudy							
+rocky_mountains	precip	thunderstorms							
+rocky_mountains	precip	showers							
+rocky_mountains	precip	snow							
+rocky_mountains	precip	fog							
+rocky_mountains	precip	none							
+southern_california	day	hot							
+southern_california	day	warm							
+southern_california	day	cool							
+southern_california	day	cold							
+southern_california	night	hot							
+southern_california	night	warm							
+southern_california	night	cool							
+southern_california	night	cold							
+southern_california	sky	clear							
+southern_california	sky	partly_cloudy							
+southern_california	sky	cloudy							
+southern_california	precip	thunderstorms							
+southern_california	precip	showers							
+southern_california	precip	snow							
+southern_california	precip	fog							
+southern_california	precip	none							
+eastern_seaboard	day	hot							
+eastern_seaboard	day	warm							
+eastern_seaboard	day	cool							
+eastern_seaboard	day	cold							
+eastern_seaboard	night	hot							
+eastern_seaboard	night	warm							
+eastern_seaboard	night	cool							
+eastern_seaboard	night	cold							
+eastern_seaboard	sky	clear							
+eastern_seaboard	sky	partly_cloudy							
+eastern_seaboard	sky	cloudy							
+eastern_seaboard	precip	thunderstorms							
+eastern_seaboard	precip	showers							
+eastern_seaboard	precip	snow							
+eastern_seaboard	precip	fog							
+eastern_seaboard	precip	none							
+heartland	day	hot							
+heartland	day	warm							
+heartland	day	cool							
+heartland	day	cold							
+heartland	night	hot							
+heartland	night	warm							
+heartland	night	cool							
+heartland	night	cold							
+heartland	sky	clear							
+heartland	sky	partly_cloudy							
+heartland	sky	cloudy							
+heartland	precip	thunderstorms							
+heartland	precip	showers							
+heartland	precip	snow							
+heartland	precip	fog							
+heartland	precip	none							
+florida	day	hot							
+florida	day	warm							
+florida	day	cool							
+florida	day	cold							
+florida	night	hot							
+florida	night	warm							
+florida	night	cool							
+florida	night	cold							
+florida	sky	clear							
+florida	sky	partly_cloudy							
+florida	sky	cloudy							
+florida	precip	thunderstorms							
+florida	precip	showers							
+florida	precip	snow							
+florida	precip	fog							
+florida	precip	none							
+northern_california	day	hot							
+northern_california	day	warm							
+northern_california	day	cool							
+northern_california	day	cold							
+northern_california	night	hot							
+northern_california	night	warm							
+northern_california	night	cool							
+northern_california	night	cold							
+northern_california	sky	clear							
+northern_california	sky	partly_cloudy							
+northern_california	sky	cloudy							
+northern_california	precip	thunderstorms							
+northern_california	precip	showers							
+northern_california	precip	snow							
+northern_california	precip	fog							
+northern_california	precip	none							
+deep_south	day	hot							
+deep_south	day	warm							
+deep_south	day	cool							
+deep_south	day	cold							
+deep_south	night	hot							
+deep_south	night	warm							
+deep_south	night	cool							
+deep_south	night	cold							
+deep_south	sky	clear							
+deep_south	sky	partly_cloudy							
+deep_south	sky	cloudy							
+deep_south	precip	thunderstorms							
+deep_south	precip	showers							
+deep_south	precip	snow							
+deep_south	precip	fog							
+deep_south	precip	none							
+southwest	day	hot							
+southwest	day	warm							
+southwest	day	cool							
+southwest	day	cold							
+southwest	night	hot							
+southwest	night	warm							
+southwest	night	cool							
+southwest	night	cold							
+southwest	sky	clear							
+southwest	sky	partly_cloudy							
+southwest	sky	cloudy							
+southwest	precip	thunderstorms							
+southwest	precip	showers							
+southwest	precip	snow							
+southwest	precip	fog							
+southwest	precip	none							
+pacific_northwest	day	hot							
+pacific_northwest	day	warm							
+pacific_northwest	day	cool							
+pacific_northwest	day	cold							
+pacific_northwest	night	hot							
+pacific_northwest	night	warm							
+pacific_northwest	night	cool							
+pacific_northwest	night	cold							
+pacific_northwest	sky	clear							
+pacific_northwest	sky	partly_cloudy							
+pacific_northwest	sky	cloudy							
+pacific_northwest	precip	thunderstorms							
+pacific_northwest	precip	showers							
+pacific_northwest	precip	snow							
+pacific_northwest	precip	fog							
+pacific_northwest	precip	none							

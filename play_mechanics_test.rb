@@ -75,7 +75,7 @@ end
 #pitcher_hash = {514 => "PARK", 539 => "WP_PB", 564 => "OFR", 615 => "IFR", 616 => "HB", 624 => "SG_2B", 633 => "HF_CF", 651 => "1B_LCF", 658 => "HF_RF", 666=> "SG_SS", 673 => "HF_LF", 701 => "1B_GCF", 723 => "2B_RCF", 799 => "DF", 939 => "SO", 963 => "BB", 999 => "HG_2B"}
 
 #random dice roll for 000-999. This is the way the IBL game functions so I am going with it.
-dice_roll = 183 #rand(999)
+dice_roll = 680 #rand(999)
 
 #random numbers for bases. Eventually this will be generated and
 #stored as the game progresses
@@ -120,7 +120,7 @@ $runnerRating = rand(4)
 $infielder_rating = -1
 $batter_rating = 3
 
-#hard grounder proc
+#hard grounder proc INCOMPLETE
 def hard_grounder
 	case $allBases
 	when "000" then puts "Batter out at first."
@@ -151,8 +151,45 @@ def hard_grounder
 	end
 end
 
-#slow grounder proc
-
+#slow grounder proc INCOMPLETE
+def slow_grounder
+	case $allBases
+	when "000" then puts "Batter out at first."
+	when "100" then
+		if $runnerRating >= 2
+			puts "Batter out at first. Runner advances to second."
+		else
+			puts "Runner forced out at second. Batter safe at first."
+		end
+	when "010" then puts "Batter out at first. Runner advances to third."
+	when "001" then puts "Batter out at first. Runner scores."
+	when "110"
+		if $runnerRating >= 2
+			puts "Batter out at first. Runner advances to third."
+		else
+			puts "Runner forced out at second. Batter safe at first."
+		end
+	when "101" then
+		if $runnerRating >= 2
+			puts "Batter out at first. Runner on first advances to second and runner on third scores."
+		else
+			puts "Runner forced out at second. Batter safe at first."
+		end
+	when "011" then
+		if $direction == "right"
+			puts "Batter out at first. Runner on third scores. Runner on second advances to third."
+		else
+			puts "Batter out a first. Runner on third scores. Runner on second holds."
+		end
+	when "111" then
+		if $runnerRating >= 2
+			puts "Batter out at first. Runner on first advances to second, runner on second advances to third and runner on third scores."
+		else
+			puts "Runner forced out at second. Batter safe at first. Runner on second advances to third and runner on third scores."
+		end
+	else puts "other play"
+	end
+end
 
 
 
@@ -172,7 +209,7 @@ case $play_array.first.split("_")[0]
 	when "HG" then hard_grounder
 	when "HG-" then hard_grounder
 	when "RG" then puts "Routine grounder"
-	when "SG" then puts "Slow grounder"
+	when "SG" then puts slow_grounder
 	when "1B" then puts "Single"
 	when "2B" then puts "Double"
 	when "3B" then puts "Triple"
